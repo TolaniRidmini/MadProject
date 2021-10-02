@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClickTHrrecords"
+    tools:context=".ViewTHR">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="180dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="4dp"
+        android:text="Results"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="121dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E91E63"
+        android:onClick="onClickTHrrecords"
+        android:text="VIEW RECORDS"
+        android:textColorLink="#009688"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="180dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#E91E63"
+        android:onClick="onClickSaveRecord"
+        android:text="SAVE RECORDS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THRdestxt" />
+
+    <TextView
+        android:id="@+id/THRvalue"
+        android:layout_width="149dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Heart Rate :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/THRstatus"
+        android:layout_width="109dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Status :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THRZtxt" />
+
+    <TextView
+        android:id="@+id/THRdes"
+        android:layout_width="121dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:text="Description :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:onClick="onClickback1"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/THRZtxt"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:text="THR Zone :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THRvalue" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="99dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="L Bound :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THRstatus" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="96dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:text="U Bound :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/THRtzonetxt"
+        android:layout_width="248dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/THRtzonetxt"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HRThrtxt" />
+
+    <TextView
+        android:id="@+id/HRThrtxt"
+        android:layout_width="249dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/THRhrtxt"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/THRststustxt"
+        android:layout_width="249dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/THRstatustxt"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THRtzonetxt" />
+
+    <TextView
+        android:id="@+id/THRlbtxt"
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/THRlbtxt"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THRststustxt" />
+
+    <TextView
+        android:id="@+id/THRuptx"
+        android:layout_width="249dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/THRuptxt"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THRlbtxt" />
+
+    <TextView
+        android:id="@+id/THRdestxt"
+        android:layout_width="251dp"
+        android:layout_height="173dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/THRdestxt"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THRuptx" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="624dp"
+        android:layout_height="794dp"
+        android:alpha="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.072"
+        app:srcCompat="@drawable/thr4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

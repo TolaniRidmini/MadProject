@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.madproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MADProject">
+        <activity
+            android:name=".BFP_records"
+            android:exported="true" />
+        <activity
+            android:name=".THR_records"
+            android:exported="true" />
+        <activity
+            android:name=".BMI_records"
+            android:exported="true" />
+        <activity
+            android:name=".BMR_records"
+            android:exported="true" />
+        <activity
+            android:name=".ViewTHR"
+            android:exported="true" />
+        <activity
+            android:name=".ViewBFP"
+            android:exported="true" />
+        <activity
+            android:name=".ViewBMR"
+            android:exported="true" />
+        <activity
+            android:name=".ViewBMI"
+            android:exported="true" />
+        <activity
+            android:name=".BMR"
+            android:exported="true" />
+        <activity
+            android:name=".BFP"
+            android:exported="true" />
+        <activity
+            android:name=".THR"
+            android:exported="true" />
+        <activity
+            android:name=".BMI"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
